@@ -35,6 +35,13 @@ public class usercontroller {
 		return response;
 	}
 	
+	@GetMapping("/getuser/v1/{id}")
+	public Object getusers(@PathVariable int id) {
+		
+	Object response=userservice.getuser(id);
+		return response;
+	}
+	
 	
 
 }
