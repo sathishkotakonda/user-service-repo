@@ -24,7 +24,7 @@ public class usercontroller {
 	public Object createuser(@RequestBody userrequestdto reqdto) {
 		
 		Object response =userservice.createuser(reqdto);
-		return response;
+		return response ;
 		
 	}
 	
