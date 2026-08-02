@@ -1,15 +1,5 @@
 package com.ecom.user.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+public record userrequestdto(String name, String email, String password) {
 
-@Getter
-@Setter
-public class userrequestdto {
-
-	
-		
-		private String name;
-		private String email;
-		
 }

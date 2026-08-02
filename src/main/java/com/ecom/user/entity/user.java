@@ -1,5 +1,6 @@
 package com.ecom.user.entity;
 
+import org.apache.catalina.User;
 import org.hibernate.annotations.AnyDiscriminatorImplicitValues.Strategy;
 
 import jakarta.persistence.Entity;
@@ -21,6 +22,8 @@ public class user {
 	private int id;
 	private String name;
 	private String email;
+	private String password;
+	
 	
 
 }

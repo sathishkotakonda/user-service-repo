@@ -1,17 +1,5 @@
 package com.ecom.user.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+public record userresponsedto(long userId, String name, String email) {
 
-@Getter
-@Setter
-public class userresponsedto {
-		
-	
-		private int id;
-		private String name;
-		private String email;
-		
-		
-		
 }

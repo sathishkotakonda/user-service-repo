@@ -1,12 +1,19 @@
 package com.ecom.user.service;
 
-import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
 
 import com.ecom.user.dto.userrequestdto;
+import com.ecom.user.dto.userresponsedto;
+import com.ecom.user.entity.user;
 
 public interface userservice {
 		
-	public Object createuser(userrequestdto dto);
+	public userresponsedto createuser(userrequestdto dto) throws Exception;
 	
-	public Object getuser(int id);  
+	public userresponsedto getuser(long id); 
+	
+	public List<userresponsedto> getallusers();
+	
+	public String LoginApi(userrequestdto req);
 }
